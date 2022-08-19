@@ -1,0 +1,13 @@
+@media (max-width: 475px) {
+	.wrapper{
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+		margin-top: 0 !important
+	}
+}
+@media (max-width: 380px) {
+	.wrapper{
+		padding: 65px 10px;		
+	}
+}

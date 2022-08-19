@@ -1,0 +1,128 @@
+body{
+	background: #FAFAFA;
+	box-shadow: inset 0px 0px 58px 45px rgba(0, 0, 0, 0.3);
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	font-family: Roboto;
+}
+.wrapper{
+	background: #D4D4D4;
+	max-width: 475px;
+	margin: 0 auto;
+	border-radius: 15px;
+	padding: 65px 30px;
+}
+p{
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+}
+.hello-block .tac img{
+	width: 159px;
+	height: 82px;
+	margin-bottom: 43px;
+}
+.hello-block input{
+	background: #B7B7B7;
+	border-radius: 3px;
+	width: 100%;
+	border: none;
+	height: 33px;
+	padding-left: 13px;
+	margin: 13px 0 35px 0;
+}
+.my-btn{
+	background: #5795B8;
+	border-radius: 4px;
+	color: #fff;
+	padding: 4.5px 40px;
+	display: inline-block;
+	cursor: pointer;
+}
+.lang-picker{
+	margin: 34px auto 0 auto;
+	max-width: 132px;
+	background: #AFAEAE;
+	border-radius: 14.5px;
+	font-weight: 500;
+	position: relative;
+	padding: 2.5px 22px;
+}
+.selector{
+	width: 66px;
+	height: 29px;
+	background: #5795B8;
+	border-radius: 14.5px;
+	position: absolute;
+	left: 66px;
+	top: 0;
+	z-index: 98;
+}
+.lang-picker .pointer{
+	z-index: 99;
+}
+
+.selector-anim-left{
+	animation-name: selector-anim-left;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+@keyframes selector-anim-left{
+	0%{
+		left: 66px;
+	}
+	100%{
+		left: 0px;
+	}
+}
+.selector-anim-right{
+	animation-name: selector-anim-right;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+@keyframes selector-anim-right{
+	0%{
+		left: 0px;
+	}
+	100%{
+		left: 66px;
+	}
+}
+
+.link-block p{
+	margin: 40px 0 12px 0;
+}
+.link-block .link{
+	cursor: default;
+	text-decoration-line: underline;
+	color: #274658;
+	margin-bottom: 40px;
+}
+.load-block{
+	animation-name: load-block;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes load-block{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.error{
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	background: #FF9C9C;
+	position: absolute;
+	padding: 5px 10px;
+	border-radius: 6px;
+	left: 0;
+	top: 0;	
+}
